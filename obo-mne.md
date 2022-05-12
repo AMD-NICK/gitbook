@@ -1,3 +1,8 @@
+---
+cover: https://s3.blog.amd-nick.me/2020/02/amd_nick-cover.jpg
+coverY: 47.36666666666666
+---
+
 # 🙂 Обо мне
 
 ![](https://s3.blog.amd-nick.me/2020/02/amd\_nick-cover.jpg)
