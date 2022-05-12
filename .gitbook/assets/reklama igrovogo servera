@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Бесплатная реклама игрового сервера</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=c4ebd0fc56" />
+
+    <link rel="canonical" href="https://blog.amd-nick.me/reklama-igrovogo-servera/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="https://blog.amd-nick.me/reklama-igrovogo-servera/amp/" />
+    
+    <meta property="og:site_name" content="Блог _AMD_" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Бесплатная реклама игрового сервера" />
+    <meta property="og:description" content="Это обновленная версия 2 старых, но актуальных способов раскрутки игрового сервера. Если на вашем сервере нет игроков, то и сам по себе туда никто не попадет. Наша цель – получить базовую массу игроков, к которой остальные уже будут присоединяться по сарафанному радио или просто из общего списка серверов. Способ протестирован в" />
+    <meta property="og:url" content="https://blog.amd-nick.me/reklama-igrovogo-servera/" />
+    <meta property="og:image" content="https://s3.blog.amd-nick.me/2021/11/game-server-piar.jpg" />
+    <meta property="article:published_time" content="2021-11-12T10:37:00.000Z" />
+    <meta property="article:modified_time" content="2021-11-12T10:37:00.000Z" />
+    <meta property="article:tag" content="Garry&amp;#x27;s Mod" />
+    
+    <meta property="article:publisher" content="https://www.facebook.com/amdshnick" />
+    <meta property="article:author" content="https://www.facebook.com/amdshnick" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Бесплатная реклама игрового сервера" />
+    <meta name="twitter:description" content="Это обновленная версия 2 старых, но актуальных способов раскрутки игрового сервера. Если на вашем сервере нет игроков, то и сам по себе туда никто не попадет. Наша цель – получить базовую массу игроков, к которой остальные уже будут присоединяться по сарафанному радио или просто из общего списка серверов. Способ протестирован в" />
+    <meta name="twitter:url" content="https://blog.amd-nick.me/reklama-igrovogo-servera/" />
+    <meta name="twitter:image" content="https://s3.blog.amd-nick.me/2021/11/game-server-piar.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="_AMD_" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Garry&#x27;s Mod" />
+    <meta name="twitter:site" content="@amd_nick" />
+    <meta name="twitter:creator" content="@amd_nick" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Блог _AMD_",
+        "url": "https://blog.amd-nick.me/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://blog.amd-nick.me/content/images/2018/07/logo.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "_AMD_",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://blog.amd-nick.me/content/images/2018/07/vk_-102092477_456240416-1.jpg"
+        },
+        "url": "https://blog.amd-nick.me/author/amd_nick/",
+        "sameAs": [
+            "https://t.me/boxie",
+            "https://www.facebook.com/amdshnick",
+            "https://twitter.com/amd_nick"
+        ]
+    },
+    "headline": "Бесплатная реклама игрового сервера",
+    "url": "https://blog.amd-nick.me/reklama-igrovogo-servera/",
+    "datePublished": "2021-11-12T10:37:00.000Z",
+    "dateModified": "2021-11-12T10:37:00.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://s3.blog.amd-nick.me/2021/11/game-server-piar.jpg",
+        "width": 1280,
+        "height": 720
+    },
+    "keywords": "Garry's Mod",
+    "description": "Это обновленная\n[https://web.archive.org/web/20211108183305/https://amd-nick.me/raskrutka-igrovyh-serverov/] \nверсия 2 старых, но актуальных способов раскрутки игрового сервера.\n\nЕсли на вашем сервере нет игроков, то и сам по себе туда никто не попадет. Наша\nцель – получить базовую массу игроков, к которой остальные уже будут\nприсоединяться по сарафанному радио или просто из общего списка серверов.\n\n&gt; Способ протестирован в реальной жизни для Garry&#x27;s Mod серверов и Rust.\nМы будем обращаться к по",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://blog.amd-nick.me/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 4.12" />
+    <link rel="alternate" type="application/rss+xml" title="Блог _AMD_" href="https://blog.amd-nick.me/rss/" />
+    <script defer src="https://unpkg.com/@tryghost/portal@~1.8.0/umd/portal.min.js" data-ghost="https://blog.amd-nick.me/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script>document.documentElement.classList.add('dark-mode');</script><style>:root {--ghost-accent-color: #a1a1a1;}</style>
+
+</head>
+<body class="post-template tag-garrys-mod">
+
+    <div class="site-wrapper">
+
+        
+
+<header class="site-header">
+    <div class="outer site-nav-main">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+            <a class="site-nav-logo" href="https://blog.amd-nick.me"><img src="https://blog.amd-nick.me/content/images/2018/07/logo.png" alt="Блог _AMD_" /></a>
+        <div class="site-nav-content">
+                <ul class="nav">
+    <li class="nav-glavnaia"><a href="https://blog.amd-nick.me/">Главная</a></li>
+    <li class="nav-obo-mnie"><a href="https://blog.amd-nick.me/about/">Обо мне</a></li>
+    <li class="nav-gm-donate"><a href="https://blog.amd-nick.me/tag/gm-donate/">gm-donate</a></li>
+</ul>
+
+                <span class="nav-post-title ">Бесплатная реклама игрового сервера</span>
+        </div>
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+                <a class="social-link social-link-fb" href="https://www.facebook.com/amdshnick" title="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm5.204 4.911h-3.546c-2.103 0-4.443.885-4.443 3.934.01 1.062 0 2.08 0 3.225h-2.433v3.872h2.509v11.147h4.61v-11.22h3.042l.275-3.81h-3.397s.007-1.695 0-2.187c0-1.205 1.253-1.136 1.329-1.136h2.054V4.911z" /></svg></a>
+                <a class="social-link social-link-tw" href="https://twitter.com/amd_nick" title="Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a>
+        </div>
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+    </div>
+</nav>
+    </div>
+</div></header>
+
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post tag-garrys-mod ">
+
+            <header class="post-full-header">
+
+                <section class="post-full-tags">
+                    <a href="/tag/garrys-mod/">Garry&#x27;s Mod</a>
+                </section>
+
+                <h1 class="post-full-title">Бесплатная реклама игрового сервера</h1>
+
+
+                <div class="post-full-byline">
+
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+                            <li class="author-list-item">
+
+                                <div class="author-card">
+                                    <img class="author-profile-image" src="/content/images/size/w100/2018/07/vk_-102092477_456240416-1.jpg" alt="_AMD_" />
+                                    <div class="author-info">
+                                        <div class="bio">
+                                            <h2>_AMD_</h2>
+                                            <p>Основатель trigon.im и gm-donate.ru. Интересуюсь айти, текстами, продажами. Меломан, интроверт, альтруист</p>
+                                            <p><a href="/author/amd_nick/">More posts</a> by _AMD_.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="/author/amd_nick/" class="author-avatar">
+                                    <img class="author-profile-image" src="/content/images/size/w100/2018/07/vk_-102092477_456240416-1.jpg" alt="_AMD_" />
+                                </a>
+
+                            </li>
+                        </ul>
+
+                        <section class="post-full-byline-meta">
+                            <h4 class="author-name"><a href="/author/amd_nick/">_AMD_</a></h4>
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2021-11-12">12 нояб. 2021</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 3 min read</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
+
+            <figure class="post-full-image">
+                <img
+                    srcset="https://s3.blog.amd-nick.me/2021/11/game-server-piar.jpg 300w,
+                            https://s3.blog.amd-nick.me/2021/11/game-server-piar.jpg 600w,
+                            https://s3.blog.amd-nick.me/2021/11/game-server-piar.jpg 1000w,
+                            https://s3.blog.amd-nick.me/2021/11/game-server-piar.jpg 2000w"
+                    sizes="(max-width: 800px) 400px,
+                        (max-width: 1170px) 1170px,
+                            2000px"
+                    src="https://s3.blog.amd-nick.me/2021/11/game-server-piar.jpg"
+                    alt="Бесплатная реклама игрового сервера"
+                />
+            </figure>
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <p>Это <a href="https://web.archive.org/web/20211108183305/https://amd-nick.me/raskrutka-igrovyh-serverov/">обновленная</a> версия 2 старых, но актуальных способов раскрутки игрового сервера.</p><p>Если на вашем сервере нет игроков, то и сам по себе туда никто не попадет. Наша цель – получить базовую массу игроков, к которой остальные уже будут присоединяться по сарафанному радио или просто из общего списка серверов.</p><blockquote>Способ протестирован в реальной жизни для Garry's Mod серверов и Rust.</blockquote><p>Мы будем обращаться к потенциальным игрокам лично. Потребуется больше времени, но зато бесплатно и <strong>намного(!) эффективнее</strong>. Обращаясь к людям лично, мы уже устанавливаем личный контакт. Им будет труднее отказать, а нам будет проще убедить.</p><hr><h1 id="%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-vk">Способ первый. VK</h1><blockquote>Работает для игровых серверов на любом движке и любой платформе</blockquote><p>Находим VK сообщества конкурентов, открываем список их подписчиков и начинаем каждому наяривать сообщениями, пока не устанете или не упретесь в лимит (вроде 50 не-друзей в сутки). Пример сообщения:</p><blockquote>Привет, я нашел тебя в сообществе "Лучший DarkRP сервер в мире". Тоже долго играл на этом проекте, пока не устал от постоянных маразмов админов, сбитой в хлам экономики и вообще скучной атмосферы и гнилой механики игры. Никто не любит рекламу, но я хочу предложить тебе поиграть на моем сервере, где эти проблемы устранены, а за то, что побеспокоил тебя рекламой, дам тебе 100500 игровой валюты, если просто зайдешь поиграть 5 минут. IP сервера: 123.123.123.123. Да, это немного рассылка, но я живой человек и делаю ее руками – можешь писать мне, я отвечу</blockquote><p>В сообщении важно надавить на больное. Будет идеально, если вы действительно знаете сервер, о котором говорите и вместо абстрактных проблем будете указывать на реальные имена, причины, косяки. Например "Админ AMD мудак, потому что..." :)</p><h1 id="%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B9-steam">Способ второй. Steam</h1><p>Работает для игр, где мультиплеер идет через Steam (не Minecraft/GTA). На практике показался более эффективным и вроде нет лимитов на сообщения.</p><p>Заходим на игровые сервера конкурентов и сразу выходим. Далее в стиме заходим в "Друзья" &gt; "Недавно играли вместе" и добавляем каждого в друзья.  Большинство примут заявку практически мгновенно, потому что прямо сейчас в сети и вы уже сможете начать делать рассылку подобно той, которая предложена выше.</p><figure class="kg-card kg-image-card kg-width-wide kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2021/11/image.png" class="kg-image" alt loading="lazy" width="945" height="538"><figcaption>Сейчас интерфейс немного обновлен, но картинка вроде еще примерно актуальна</figcaption></figure><p>Можно также находить Steam сообщества проектов конкурентов и делать рассылку по участникам, но многие будут оффлайн и ждать придется дольше.</p><h1 id="%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-garrys-mod">Советы для Garry's Mod</h1><blockquote>Follow The Leader. </blockquote><p>Большинство игровых проектов погибает. Мы в GMDonate научились с большой точностью определять проекты, которые "не выстрелят" по таким признакам:</p><ul><li><strong>Не куплен хостинг или выбран самый дешевый</strong><br>Скупой платит дважды. Вы получите или лаг или плохую локацию и сверхнизкую отображаемость в списке серверов (если речь идет о Garry's Mod например)</li><li><strong>Нетипичная карта</strong><br>Вам она кажется интересной и классной, а игрокам придется на 5 минут дольше грузиться и изучать неизвестную карту, когда они привыкли к популярным. Это как в CSGO все играют на Dust 2, хотя Ancient не менее интересна. А неправильная настройка загрузки контента приведет к тому, что игроки вообще не смогут зайти на сервер</li><li><strong>Вредные принципы владельцев</strong><br>Бан за мелочи, вроде мата, особенно на ранних этапах приведет только к потере игрока без положительной отдачи, а позиция "сервер для игроков, а не для доната" в конце концов лишит вас денег, мотивации и средств для поддержания проекта. Стоит задуматься, стоит ли тот или иной "принцип" того, что проект может просто закрыться</li><li><strong>Непопулярный игровой режим</strong><br>Подобно картам, если игрок привык играть в каком-то конкретном режиме, то ему может просто не захотеться изучать какой-то еще. То же касается изменение коренных механик игрового режима, который вы выбрали, даже если он популярный. К примеру, в DarkRP опасно убирать F4 меню или стандартный Prop Protection или (особенно) переделывать спавн меню</li></ul><p>В любой непонятной ситуации настоятельно рекомендую следовать правилу "Следуй за лидером". И только тогда, когда вы сами станете лидерами, вы можете позволить себе нетипичные решения.</p><h1 id="%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%83%D1%8E">Советую:</h1><ul><li><a href="https://blog.amd-nick.me/gmod-development/">Удобная разработка в Garry's Mod</a>. Еще используете FileZilla и Notepad?</li><li><a href="https://blog.amd-nick.me/how-to-create-gmod-server/">Как я открывал свой проект</a>. Написано в довольно токсичном стиле и с некоторыми вещами я уже не согласен, но для вас может быть полезно</li><li><a href="https://t.me/gmodev">Наш чат с Garry's Mod разработчиками</a>. Тут можно задать вопрос или просто потрындеть</li></ul>
+                </div>
+            </section>
+
+                <section class="subscribe-form">
+    <h3 class="subscribe-form-title">Subscribe to Блог _AMD_</h3>
+    <p class="subscribe-form-description">Get the latest posts delivered right to your inbox</p>
+    <form data-members-form="subscribe">
+        <div class="form-group">
+            <input class="subscribe-email" data-members-email placeholder="youremail@example.com" autocomplete="false" />
+            <button class="button primary" type="submit">
+                <span class="button-content">Subscribe</span>
+                <span class="button-loader"><svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+    <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+    <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+            dur="0.5s" repeatCount="indefinite" />
+    </path>
+</svg></span>
+            </button>
+        </div>
+        <div class="message-success">
+            <strong>Great!</strong> Check your inbox and click the link to confirm your subscription.
+        </div>
+        <div class="message-error">
+            Please enter a valid email address!
+        </div>
+    </form>
+</section>
+            <section class="post-full-comments">
+                <div id="disqus_thread"></div>
+                <script>
+                var disqus_config = function () {
+                    this.page.url = "https://blog.amd-nick.me/reklama-igrovogo-servera/";
+                    this.page.identifier = "ghost-61896d25f5700a00014fc2c6"
+                };
+                (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://blog-amd-nick-me.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+                <article class="read-next-card">
+                    <header class="read-next-card-header">
+                        <h3><span>More in</span> <a href="/tag/garrys-mod/">Garry&#x27;s Mod</a></h3>
+                    </header>
+                    <div class="read-next-card-content">
+                        <ul>
+                            <li>
+                                <h4><a href="/github-workshop-garrysmod/">GitHub вместо Steam Workshop для Garry&#x27;s Mod</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2021-04-05">5 апр. 2021</time> –
+                                        5 min read</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4><a href="/gmod-development/">Эффективная разработка в Garry&#x27;s Mod</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2020-03-17">17 мар. 2020</time> –
+                                        6 min read</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4><a href="/steam-telegram-authenticator/">Steam Authenticator через бот в Telegram</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2020-01-29">29 янв. 2020</time> –
+                                        1 min read</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="read-next-card-footer">
+                        <a href="/tag/garrys-mod/">See all 6 posts
+                            →</a>
+                    </footer>
+                </article>
+
+                <article class="post-card post tag-programming ">
+
+    <a class="post-card-image-link" href="/poll-gmod-app-docs/">
+        <img class="post-card-image"
+            srcset="https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg 300w,
+                    https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg 600w,
+                    https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg 1000w,
+                    https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg 2000w"
+            sizes="(max-width: 1000px) 400px, 700px"
+            src="https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg"
+            alt="poll.gmod.app документация"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/poll-gmod-app-docs/">
+
+            <header class="post-card-header">
+                    <div class="post-card-primary-tag">Разработка</div>
+                <h2 class="post-card-title">poll.gmod.app документация</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Это простейший Long Polling микросервис, который выступает в качестве своеобразного WebHook сервера для POST запросов. Принятые данные можно получить с сервера по GET запросу. Рассчитан для ограниченной среды, где усложнена</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        _AMD_
+                    </div>
+            
+                    <a href="/author/amd_nick/" class="static-avatar">
+                        <img class="author-profile-image" src="/content/images/size/w100/2018/07/vk_-102092477_456240416-1.jpg" alt="_AMD_" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="/author/amd_nick/">_AMD_</a></span>
+                <span class="post-card-byline-date"><time datetime="2021-11-15">15 нояб. 2021</time> <span class="bull">&bull;</span> 3 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+                <article class="post-card post tag-notes ">
+
+    <a class="post-card-image-link" href="/git-ssh-setup/">
+        <img class="post-card-image"
+            srcset="https://s3.blog.amd-nick.me/2021/11/git-ssh-setup.jpg 300w,
+                    https://s3.blog.amd-nick.me/2021/11/git-ssh-setup.jpg 600w,
+                    https://s3.blog.amd-nick.me/2021/11/git-ssh-setup.jpg 1000w,
+                    https://s3.blog.amd-nick.me/2021/11/git-ssh-setup.jpg 2000w"
+            sizes="(max-width: 1000px) 400px, 700px"
+            src="https://s3.blog.amd-nick.me/2021/11/git-ssh-setup.jpg"
+            alt="Настройка git для работы через ssh"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/git-ssh-setup/">
+
+            <header class="post-card-header">
+                    <div class="post-card-primary-tag">Заметки</div>
+                <h2 class="post-card-title">Настройка git для работы через ssh</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Вкратце: генерируем ключ, добавляем его на гитхаб, заставляем репозиторий использовать ключ вместо логин-токен Зачем? Чтобы не приходилось постоянно вводить логин-токен или хранить его в открытом виде в .git-credentials (безопасность + простота)</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        _AMD_
+                    </div>
+            
+                    <a href="/author/amd_nick/" class="static-avatar">
+                        <img class="author-profile-image" src="/content/images/size/w100/2018/07/vk_-102092477_456240416-1.jpg" alt="_AMD_" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="/author/amd_nick/">_AMD_</a></span>
+                <span class="post-card-byline-date"><time datetime="2021-11-02">2 нояб. 2021</time> <span class="bull">&bull;</span> 1 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+        </div>
+    </div>
+</aside>
+
+
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://blog.amd-nick.me">Блог _AMD_</a> &copy; 2022</section>
+                <nav class="site-footer-nav">
+                    <a href="https://blog.amd-nick.me">Latest Posts</a>
+                    <a href="https://www.facebook.com/amdshnick" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://twitter.com/amd_nick" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="subscribe-success-message">
+        <a class="subscribe-close" href="javascript:;"></a>
+        You've successfully subscribed to Блог _AMD_!
+    </div>
+
+    <div id="subscribe" class="subscribe-overlay">
+        <a class="subscribe-close" href="#"></a>
+        <div class="subscribe-overlay-content">
+                <img class="subscribe-overlay-logo" src="https://blog.amd-nick.me/content/images/2018/07/logo.png" alt="Блог _AMD_" />
+            <div class="subscribe-form">
+                <h1 class="subscribe-overlay-title">Subscribe to Блог _AMD_</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest & greatest posts delivered straight to your inbox</p>
+                <form data-members-form="subscribe">
+                    <div class="form-group">
+                        <input class="subscribe-email" data-members-email placeholder="youremail@example.com"
+                            autocomplete="false" />
+                        <button class="button primary" type="submit">
+                            <span class="button-content">Subscribe</span>
+                            <span class="button-loader"><svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+    <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+    <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+            dur="0.5s" repeatCount="indefinite" />
+    </path>
+</svg></span>
+                        </button>
+                    </div>
+                    <div class="message-success">
+                        <strong>Great!</strong> Check your inbox and click the link to confirm your subscription.
+                    </div>
+                    <div class="message-error">
+                        Please enter a valid email address!
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="/assets/built/casper.js?v=c4ebd0fc56"></script>
+
+    <script>
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Give the parameter a variable name
+        var action = getParameterByName('action');
+
+        $(document).ready(function () {
+            if (action == 'subscribe') {
+                $('body').addClass("subscribe-success");
+            }
+
+            $('.subscribe-success-message .subscribe-close').click(function () {
+                $('.subscribe-success-message').addClass('close');
+            });
+
+            // Reset form on opening subscrion overlay
+            $('.subscribe-button').click(function() {
+                $('.subscribe-overlay form').removeClass();
+                $('.subscribe-email').val('');
+            });
+        });
+    </script>
+
+    <script>
+    $(document).ready(function () {
+        // FitVids - start
+        var $postContent = $(".post-full-content");
+        $postContent.fitVids();
+        // FitVids - end
+
+        // Replace nav with title on scroll - start
+        Casper.stickyNavTitle({
+            navSelector: '.site-nav-main',
+            titleSelector: '.post-full-title',
+            activeClass: 'nav-post-title-active'
+        });
+        // Replace nav with title on scroll - end
+
+        // Hover on avatar
+        var hoverTimeout;
+        $('.author-list-item').hover(function () {
+            var $this = $(this);
+
+            clearTimeout(hoverTimeout);
+
+            $('.author-card').removeClass('hovered');
+            $(this).children('.author-card').addClass('hovered');
+
+        }, function () {
+            var $this = $(this);
+
+            hoverTimeout = setTimeout(function () {
+                $this.children('.author-card').removeClass('hovered');
+            }, 800);
+        });
+    });
+</script>
+
+
+    <script src="https://t.ghostboard.io/min.js" async defer data-gbid="6067bda30316927dc80d617b"></script><noscript><img src="https://ghostboard.io/api/noscript/6067bda30316927dc80d617b/pixel.gif" alt="Ghostboard pixel" /></noscript>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-60044609-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-60044609-2');
+</script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(49559035, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49559035" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>

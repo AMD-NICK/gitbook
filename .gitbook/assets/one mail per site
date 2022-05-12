@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>1 почта - 1 сайт. Лайфхак с почтой на домене</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=c4ebd0fc56" />
+
+    <link rel="canonical" href="https://blog.amd-nick.me/one-mail-per-site/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="https://blog.amd-nick.me/one-mail-per-site/amp/" />
+    
+    <meta property="og:site_name" content="Блог _AMD_" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="1 почта - 1 сайт. Лайфхак с почтой на домене" />
+    <meta property="og:description" content="TL;DRНа яндексе можно сделать почту для домена, а затем сбор почты с несуществующих ящиков в одно место. Таким образом я сделал, что на каждом сайте у меня разные мыльники. Например insta@lol.com. И если кто-то начинает слать всякую дичь, то я сразу знаю откуда она пошлаУ Яндекса есть" />
+    <meta property="og:url" content="https://blog.amd-nick.me/one-mail-per-site/" />
+    <meta property="og:image" content="https://s3.blog.amd-nick.me/2020/02/sergey-zolkin-192937-unsplash.jpg" />
+    <meta property="article:published_time" content="2020-02-17T10:37:00.000Z" />
+    <meta property="article:modified_time" content="2020-02-17T10:37:00.000Z" />
+    <meta property="article:tag" content="Заметки" />
+    
+    <meta property="article:publisher" content="https://www.facebook.com/amdshnick" />
+    <meta property="article:author" content="https://www.facebook.com/amdshnick" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="1 почта - 1 сайт. Лайфхак с почтой на домене" />
+    <meta name="twitter:description" content="TL;DRНа яндексе можно сделать почту для домена, а затем сбор почты с несуществующих ящиков в одно место. Таким образом я сделал, что на каждом сайте у меня разные мыльники. Например insta@lol.com. И если кто-то начинает слать всякую дичь, то я сразу знаю откуда она пошлаУ Яндекса есть" />
+    <meta name="twitter:url" content="https://blog.amd-nick.me/one-mail-per-site/" />
+    <meta name="twitter:image" content="https://s3.blog.amd-nick.me/2020/02/sergey-zolkin-192937-unsplash.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="_AMD_" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Заметки" />
+    <meta name="twitter:site" content="@amd_nick" />
+    <meta name="twitter:creator" content="@amd_nick" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="1333" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Блог _AMD_",
+        "url": "https://blog.amd-nick.me/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://blog.amd-nick.me/content/images/2018/07/logo.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "_AMD_",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://blog.amd-nick.me/content/images/2018/07/vk_-102092477_456240416-1.jpg"
+        },
+        "url": "https://blog.amd-nick.me/author/amd_nick/",
+        "sameAs": [
+            "https://t.me/boxie",
+            "https://www.facebook.com/amdshnick",
+            "https://twitter.com/amd_nick"
+        ]
+    },
+    "headline": "1 почта - 1 сайт. Лайфхак с почтой на домене",
+    "url": "https://blog.amd-nick.me/one-mail-per-site/",
+    "datePublished": "2020-02-17T10:37:00.000Z",
+    "dateModified": "2020-02-17T10:37:00.000Z",
+    "keywords": "Заметки",
+    "description": "TL;DR\n&gt; На яндексе можно сделать почту для домена, а затем сбор почты с несуществующих\nящиков в одно место. Таким образом я сделал, что на каждом сайте у меня разные\nмыльники. Например insta@lol.com. И если кто-то начинает слать всякую дичь, то я\nсразу знаю откуда она пошла\n\n--------------------------------------------------------------------------------\n\nУ Яндекса есть интересный сервис Яндекс.Коннект [https://connect.yandex.ru/] \n(раньше Yandex PDD), который позволяет бесплатно делать почтовые",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://blog.amd-nick.me/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 4.12" />
+    <link rel="alternate" type="application/rss+xml" title="Блог _AMD_" href="https://blog.amd-nick.me/rss/" />
+    <script defer src="https://unpkg.com/@tryghost/portal@~1.8.0/umd/portal.min.js" data-ghost="https://blog.amd-nick.me/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script>document.documentElement.classList.add('dark-mode');</script><style>:root {--ghost-accent-color: #a1a1a1;}</style>
+
+</head>
+<body class="post-template tag-notes">
+
+    <div class="site-wrapper">
+
+        
+
+<header class="site-header">
+    <div class="outer site-nav-main">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+            <a class="site-nav-logo" href="https://blog.amd-nick.me"><img src="https://blog.amd-nick.me/content/images/2018/07/logo.png" alt="Блог _AMD_" /></a>
+        <div class="site-nav-content">
+                <ul class="nav">
+    <li class="nav-glavnaia"><a href="https://blog.amd-nick.me/">Главная</a></li>
+    <li class="nav-obo-mnie"><a href="https://blog.amd-nick.me/about/">Обо мне</a></li>
+    <li class="nav-gm-donate"><a href="https://blog.amd-nick.me/tag/gm-donate/">gm-donate</a></li>
+</ul>
+
+                <span class="nav-post-title ">1 почта - 1 сайт. Лайфхак с почтой на домене</span>
+        </div>
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+                <a class="social-link social-link-fb" href="https://www.facebook.com/amdshnick" title="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm5.204 4.911h-3.546c-2.103 0-4.443.885-4.443 3.934.01 1.062 0 2.08 0 3.225h-2.433v3.872h2.509v11.147h4.61v-11.22h3.042l.275-3.81h-3.397s.007-1.695 0-2.187c0-1.205 1.253-1.136 1.329-1.136h2.054V4.911z" /></svg></a>
+                <a class="social-link social-link-tw" href="https://twitter.com/amd_nick" title="Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a>
+        </div>
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+    </div>
+</nav>
+    </div>
+</div></header>
+
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post tag-notes no-image no-image">
+
+            <header class="post-full-header">
+
+                <section class="post-full-tags">
+                    <a href="/tag/notes/">Заметки</a>
+                </section>
+
+                <h1 class="post-full-title">1 почта - 1 сайт. Лайфхак с почтой на домене</h1>
+
+
+                <div class="post-full-byline">
+
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+                            <li class="author-list-item">
+
+                                <div class="author-card">
+                                    <img class="author-profile-image" src="/content/images/size/w100/2018/07/vk_-102092477_456240416-1.jpg" alt="_AMD_" />
+                                    <div class="author-info">
+                                        <div class="bio">
+                                            <h2>_AMD_</h2>
+                                            <p>Основатель trigon.im и gm-donate.ru. Интересуюсь айти, текстами, продажами. Меломан, интроверт, альтруист</p>
+                                            <p><a href="/author/amd_nick/">More posts</a> by _AMD_.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="/author/amd_nick/" class="author-avatar">
+                                    <img class="author-profile-image" src="/content/images/size/w100/2018/07/vk_-102092477_456240416-1.jpg" alt="_AMD_" />
+                                </a>
+
+                            </li>
+                        </ul>
+
+                        <section class="post-full-byline-meta">
+                            <h4 class="author-name"><a href="/author/amd_nick/">_AMD_</a></h4>
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2020-02-17">17 февр. 2020</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 2 min read</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
+
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <h1 id="tl-dr">TL;DR</h1><blockquote>На яндексе можно сделать почту для домена, а затем сбор почты с несуществующих ящиков в одно место. Таким образом я сделал, что на каждом сайте у меня разные мыльники. Например <a>insta@lol.com</a>. И если кто-то начинает слать всякую дичь, то я сразу знаю откуда она пошла</blockquote><hr><p>У Яндекса есть интересный сервис <a href="https://connect.yandex.ru/">Яндекс.Коннект</a> (раньше Yandex PDD), который позволяет бесплатно делать почтовые ящики на своем домене, используя при этом интерфейс Яндекс Почты.</p><blockquote>По простому говоря, это админка, которая позволяет в пару кликов клепать ящики для себя или сотрудников вида kek@lol.com</blockquote><p>И у Яндекса есть интересная фишка</p><h2 id="-">Сбор писем с несуществующих ящиков</h2><p>У почты для домена есть настройка сбора писем с несуществующих ящиков. Например, если у вас создан только <em>kek@lol.com</em> и <em>heh@lol.com</em>, а письмо пришло на <em>mda@lol.com</em>, то оно попадет на какой-нибудь <em>collector@lol.com</em> или что угодно другое, что вы укажете в качестве адреса для сбора "потерянных" писем</p><figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/02/image.png" class="kg-image" alt loading="lazy"></figure><h2 id="--1">Проблема</h2><p>Сегодня друг прислал мне забавное сообщение от "Следователя"</p><figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/02/image-1.png" class="kg-image" alt loading="lazy"></figure><p>Внутри классическая схема вымогательства денег: "у нас есть пруфы, что вы мудак и мы вас накажем, если вы не заплатите бетховены".</p><p>Как они работают? Сайты. на которых мы с вами регистрируемся время от времени взламывают, воруют базы данных и сливают их в сеть. В них хранятся наши почты, пароли и прочие вкусности, которые хацкеры используют в описанных выше целях и не только</p><blockquote>Если у вас 1-3 почтовых ящика, то можете вбить их ради интереса на <a href="https://haveibeenpwned.com/">этом сайте</a> и узнать, слили ли ваши данные</blockquote><h2 id="--2">Решение</h2><p>При регистрации на сайте указывайте для него уникальную почту, например <em>insta@lol.com для инстаграма</em>. теперь, если вам придет угроза или спам на этот ящик, то вы будете знать, кто в этом виноват :)</p><p>Кстати, часто шлют спам с разных адресов, так что отсеять их сложно, зато вы легко можете отключить весь адрес, указав на сайте новый</p><p>Также это добавляет вам немного безопасности, потому многие используют одинаковые почты и пароли на разных сайтах и узнав данные от одного, злоумышленники получат доступ к остальным. Есть специальные программы, которые ищут такие сайты. Но лучше, конечно, использовать разные пароли на разных сайтах, хотя одно другому не мешает</p>
+                </div>
+            </section>
+
+                <section class="subscribe-form">
+    <h3 class="subscribe-form-title">Subscribe to Блог _AMD_</h3>
+    <p class="subscribe-form-description">Get the latest posts delivered right to your inbox</p>
+    <form data-members-form="subscribe">
+        <div class="form-group">
+            <input class="subscribe-email" data-members-email placeholder="youremail@example.com" autocomplete="false" />
+            <button class="button primary" type="submit">
+                <span class="button-content">Subscribe</span>
+                <span class="button-loader"><svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+    <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+    <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+            dur="0.5s" repeatCount="indefinite" />
+    </path>
+</svg></span>
+            </button>
+        </div>
+        <div class="message-success">
+            <strong>Great!</strong> Check your inbox and click the link to confirm your subscription.
+        </div>
+        <div class="message-error">
+            Please enter a valid email address!
+        </div>
+    </form>
+</section>
+            <section class="post-full-comments">
+                <div id="disqus_thread"></div>
+                <script>
+                var disqus_config = function () {
+                    this.page.url = "https://blog.amd-nick.me/one-mail-per-site/";
+                    this.page.identifier = "ghost-5e494104e8c805000175c005"
+                };
+                (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://blog-amd-nick-me.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+                <article class="read-next-card">
+                    <header class="read-next-card-header">
+                        <h3><span>More in</span> <a href="/tag/notes/">Заметки</a></h3>
+                    </header>
+                    <div class="read-next-card-content">
+                        <ul>
+                            <li>
+                                <h4><a href="/tabs-and-spaces/">И табы И пробелы. Шах и мат</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2021-12-01">1 дек. 2021</time> –
+                                        1 min read</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4><a href="/grafana-prometheus-summary/">Grafana + Prometheus. Заметки новичка</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2021-11-23">23 нояб. 2021</time> –
+                                        1 min read</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4><a href="/steam-fix-raskladki/">[Решение] Steam автоматически добавляет раскладку</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2021-11-18">18 нояб. 2021</time> –
+                                        1 min read</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="read-next-card-footer">
+                        <a href="/tag/notes/">See all 21 posts
+                            →</a>
+                    </footer>
+                </article>
+
+                <article class="post-card post tag-soft tag-review tag-notes no-image no-image">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/xshell-alternative-for-putty/">
+
+            <header class="post-card-header">
+                    <div class="post-card-primary-tag">Приложения</div>
+                <h2 class="post-card-title">xShell - лучшая альтернатива Putty</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>putty - наверное, самый популярный SSH клиент, о котором знает каждый, кто имел дело с SSH. Но он не единственный бесплатный и несколько лет назад я полностью перешел с него на xShell, получив ряд преимуществ Окно управления сессиями в xShellxShell как и Putty бесплатен</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        _AMD_
+                    </div>
+            
+                    <a href="/author/amd_nick/" class="static-avatar">
+                        <img class="author-profile-image" src="/content/images/size/w100/2018/07/vk_-102092477_456240416-1.jpg" alt="_AMD_" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="/author/amd_nick/">_AMD_</a></span>
+                <span class="post-card-byline-date"><time datetime="2020-03-03">3 мар. 2020</time> <span class="bull">&bull;</span> 1 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+                <article class="post-card post tag-life ">
+
+    <a class="post-card-image-link" href="/bank-account-poland/">
+        <img class="post-card-image"
+            srcset="https://s3.blog.amd-nick.me/2020/02/poland-bank-account-for-paypal.jpg 300w,
+                    https://s3.blog.amd-nick.me/2020/02/poland-bank-account-for-paypal.jpg 600w,
+                    https://s3.blog.amd-nick.me/2020/02/poland-bank-account-for-paypal.jpg 1000w,
+                    https://s3.blog.amd-nick.me/2020/02/poland-bank-account-for-paypal.jpg 2000w"
+            sizes="(max-width: 1000px) 400px, 700px"
+            src="https://s3.blog.amd-nick.me/2020/02/poland-bank-account-for-paypal.jpg"
+            alt="Открытие банковского счета в Польше. Bank Millennium"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/bank-account-poland/">
+
+            <header class="post-card-header">
+                    <div class="post-card-primary-tag">Жизнь</div>
+                <h2 class="post-card-title">Открытие банковского счета в Польше. Bank Millennium</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Интервью с другом, который ездил в Польшу для открытия счета в банке Millennium для привязки к PayPal. Рассказывает что и как нужно делать, а также о нюансах и советы, как</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        _AMD_
+                    </div>
+            
+                    <a href="/author/amd_nick/" class="static-avatar">
+                        <img class="author-profile-image" src="/content/images/size/w100/2018/07/vk_-102092477_456240416-1.jpg" alt="_AMD_" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="/author/amd_nick/">_AMD_</a></span>
+                <span class="post-card-byline-date"><time datetime="2020-02-10">10 февр. 2020</time> <span class="bull">&bull;</span> 3 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+        </div>
+    </div>
+</aside>
+
+
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://blog.amd-nick.me">Блог _AMD_</a> &copy; 2022</section>
+                <nav class="site-footer-nav">
+                    <a href="https://blog.amd-nick.me">Latest Posts</a>
+                    <a href="https://www.facebook.com/amdshnick" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://twitter.com/amd_nick" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="subscribe-success-message">
+        <a class="subscribe-close" href="javascript:;"></a>
+        You've successfully subscribed to Блог _AMD_!
+    </div>
+
+    <div id="subscribe" class="subscribe-overlay">
+        <a class="subscribe-close" href="#"></a>
+        <div class="subscribe-overlay-content">
+                <img class="subscribe-overlay-logo" src="https://blog.amd-nick.me/content/images/2018/07/logo.png" alt="Блог _AMD_" />
+            <div class="subscribe-form">
+                <h1 class="subscribe-overlay-title">Subscribe to Блог _AMD_</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest & greatest posts delivered straight to your inbox</p>
+                <form data-members-form="subscribe">
+                    <div class="form-group">
+                        <input class="subscribe-email" data-members-email placeholder="youremail@example.com"
+                            autocomplete="false" />
+                        <button class="button primary" type="submit">
+                            <span class="button-content">Subscribe</span>
+                            <span class="button-loader"><svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+    <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+    <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+            dur="0.5s" repeatCount="indefinite" />
+    </path>
+</svg></span>
+                        </button>
+                    </div>
+                    <div class="message-success">
+                        <strong>Great!</strong> Check your inbox and click the link to confirm your subscription.
+                    </div>
+                    <div class="message-error">
+                        Please enter a valid email address!
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="/assets/built/casper.js?v=c4ebd0fc56"></script>
+
+    <script>
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Give the parameter a variable name
+        var action = getParameterByName('action');
+
+        $(document).ready(function () {
+            if (action == 'subscribe') {
+                $('body').addClass("subscribe-success");
+            }
+
+            $('.subscribe-success-message .subscribe-close').click(function () {
+                $('.subscribe-success-message').addClass('close');
+            });
+
+            // Reset form on opening subscrion overlay
+            $('.subscribe-button').click(function() {
+                $('.subscribe-overlay form').removeClass();
+                $('.subscribe-email').val('');
+            });
+        });
+    </script>
+
+    <script>
+    $(document).ready(function () {
+        // FitVids - start
+        var $postContent = $(".post-full-content");
+        $postContent.fitVids();
+        // FitVids - end
+
+        // Replace nav with title on scroll - start
+        Casper.stickyNavTitle({
+            navSelector: '.site-nav-main',
+            titleSelector: '.post-full-title',
+            activeClass: 'nav-post-title-active'
+        });
+        // Replace nav with title on scroll - end
+
+        // Hover on avatar
+        var hoverTimeout;
+        $('.author-list-item').hover(function () {
+            var $this = $(this);
+
+            clearTimeout(hoverTimeout);
+
+            $('.author-card').removeClass('hovered');
+            $(this).children('.author-card').addClass('hovered');
+
+        }, function () {
+            var $this = $(this);
+
+            hoverTimeout = setTimeout(function () {
+                $this.children('.author-card').removeClass('hovered');
+            }, 800);
+        });
+    });
+</script>
+
+
+    <script src="https://t.ghostboard.io/min.js" async defer data-gbid="6067bda30316927dc80d617b"></script><noscript><img src="https://ghostboard.io/api/noscript/6067bda30316927dc80d617b/pixel.gif" alt="Ghostboard pixel" /></noscript>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-60044609-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-60044609-2');
+</script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(49559035, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49559035" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>

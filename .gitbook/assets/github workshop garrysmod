@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>GitHub вместо Steam Workshop для Garry&#x27;s Mod</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=c4ebd0fc56" />
+
+    <link rel="canonical" href="https://blog.amd-nick.me/github-workshop-garrysmod/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="https://blog.amd-nick.me/github-workshop-garrysmod/amp/" />
+    
+    <meta property="og:site_name" content="Блог _AMD_" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="GitHub вместо Steam Workshop для Garry&#x27;s Mod" />
+    <meta property="og:description" content="InGameShop (IGS) - внутриигровая менюшка для Garry&#x27;s Mod серверов, через которую игроки донатят их владельцам с помощью gm-donate.ru. До недавней поры установка происходила через Steam Workshop. Сейчас готова версия, которая 1 запросом скачивает и выполняет код. Внизу будет реализация Разработка такой версии изначально казалась задачкой на вечерок под кофеек," />
+    <meta property="og:url" content="https://blog.amd-nick.me/github-workshop-garrysmod/" />
+    <meta property="og:image" content="https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg" />
+    <meta property="article:published_time" content="2021-04-05T11:23:00.000Z" />
+    <meta property="article:modified_time" content="2021-04-05T11:23:53.000Z" />
+    <meta property="article:tag" content="Gm-Donate.Ru" />
+    <meta property="article:tag" content="Garry&amp;#x27;s Mod" />
+    <meta property="article:tag" content="Разработка" />
+    
+    <meta property="article:publisher" content="https://www.facebook.com/amdshnick" />
+    <meta property="article:author" content="https://www.facebook.com/amdshnick" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GitHub вместо Steam Workshop для Garry&#x27;s Mod" />
+    <meta name="twitter:description" content="InGameShop (IGS) - внутриигровая менюшка для Garry&#x27;s Mod серверов, через которую игроки донатят их владельцам с помощью gm-donate.ru. До недавней поры установка происходила через Steam Workshop. Сейчас готова версия, которая 1 запросом скачивает и выполняет код. Внизу будет реализация Разработка такой версии изначально казалась задачкой на вечерок под кофеек," />
+    <meta name="twitter:url" content="https://blog.amd-nick.me/github-workshop-garrysmod/" />
+    <meta name="twitter:image" content="https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="_AMD_" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Gm-Donate.Ru, Garry&#x27;s Mod, Разработка" />
+    <meta name="twitter:site" content="@amd_nick" />
+    <meta name="twitter:creator" content="@amd_nick" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="1108" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Блог _AMD_",
+        "url": "https://blog.amd-nick.me/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://blog.amd-nick.me/content/images/2018/07/logo.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "_AMD_",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://blog.amd-nick.me/content/images/2018/07/vk_-102092477_456240416-1.jpg"
+        },
+        "url": "https://blog.amd-nick.me/author/amd_nick/",
+        "sameAs": [
+            "https://t.me/boxie",
+            "https://www.facebook.com/amdshnick",
+            "https://twitter.com/amd_nick"
+        ]
+    },
+    "headline": "GitHub вместо Steam Workshop для Garry&#x27;s Mod",
+    "url": "https://blog.amd-nick.me/github-workshop-garrysmod/",
+    "datePublished": "2021-04-05T11:23:00.000Z",
+    "dateModified": "2021-04-05T11:23:53.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg",
+        "width": 2000,
+        "height": 1108
+    },
+    "keywords": "Gm-Donate.Ru, Garry's Mod, Разработка",
+    "description": "InGameShop (IGS) - внутриигровая менюшка для Garry&#x27;s Mod серверов, через которую\nигроки донатят их владельцам с помощью gm-donate.ru [https://gm-donate.ru]. До\nнедавней поры установка происходила через Steam Workshop. Сейчас готова версия,\nкоторая 1 запросом скачивает и выполняет код. Внизу будет реализация\n\nРазработка такой версии изначально казалась задачкой на вечерок под кофеек, но\nмного раз откладывалась из-за каких-то нюансов. Было много идей, как все\nреализовать, но выжила только одна, о ",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://blog.amd-nick.me/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 4.12" />
+    <link rel="alternate" type="application/rss+xml" title="Блог _AMD_" href="https://blog.amd-nick.me/rss/" />
+    <script defer src="https://unpkg.com/@tryghost/portal@~1.8.0/umd/portal.min.js" data-ghost="https://blog.amd-nick.me/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script>document.documentElement.classList.add('dark-mode');</script><style>:root {--ghost-accent-color: #a1a1a1;}</style>
+
+</head>
+<body class="post-template tag-gm-donate tag-garrys-mod tag-programming">
+
+    <div class="site-wrapper">
+
+        
+
+<header class="site-header">
+    <div class="outer site-nav-main">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+            <a class="site-nav-logo" href="https://blog.amd-nick.me"><img src="https://blog.amd-nick.me/content/images/2018/07/logo.png" alt="Блог _AMD_" /></a>
+        <div class="site-nav-content">
+                <ul class="nav">
+    <li class="nav-glavnaia"><a href="https://blog.amd-nick.me/">Главная</a></li>
+    <li class="nav-obo-mnie"><a href="https://blog.amd-nick.me/about/">Обо мне</a></li>
+    <li class="nav-gm-donate"><a href="https://blog.amd-nick.me/tag/gm-donate/">gm-donate</a></li>
+</ul>
+
+                <span class="nav-post-title ">GitHub вместо Steam Workshop для Garry&#x27;s Mod</span>
+        </div>
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+                <a class="social-link social-link-fb" href="https://www.facebook.com/amdshnick" title="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm5.204 4.911h-3.546c-2.103 0-4.443.885-4.443 3.934.01 1.062 0 2.08 0 3.225h-2.433v3.872h2.509v11.147h4.61v-11.22h3.042l.275-3.81h-3.397s.007-1.695 0-2.187c0-1.205 1.253-1.136 1.329-1.136h2.054V4.911z" /></svg></a>
+                <a class="social-link social-link-tw" href="https://twitter.com/amd_nick" title="Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a>
+        </div>
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+    </div>
+</nav>
+    </div>
+</div></header>
+
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post tag-gm-donate tag-garrys-mod tag-programming ">
+
+            <header class="post-full-header">
+
+                <section class="post-full-tags">
+                    <a href="/tag/gm-donate/">Gm-Donate.Ru</a>
+                </section>
+
+                <h1 class="post-full-title">GitHub вместо Steam Workshop для Garry&#x27;s Mod</h1>
+
+
+                <div class="post-full-byline">
+
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+                            <li class="author-list-item">
+
+                                <div class="author-card">
+                                    <img class="author-profile-image" src="/content/images/size/w100/2018/07/vk_-102092477_456240416-1.jpg" alt="_AMD_" />
+                                    <div class="author-info">
+                                        <div class="bio">
+                                            <h2>_AMD_</h2>
+                                            <p>Основатель trigon.im и gm-donate.ru. Интересуюсь айти, текстами, продажами. Меломан, интроверт, альтруист</p>
+                                            <p><a href="/author/amd_nick/">More posts</a> by _AMD_.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="/author/amd_nick/" class="author-avatar">
+                                    <img class="author-profile-image" src="/content/images/size/w100/2018/07/vk_-102092477_456240416-1.jpg" alt="_AMD_" />
+                                </a>
+
+                            </li>
+                        </ul>
+
+                        <section class="post-full-byline-meta">
+                            <h4 class="author-name"><a href="/author/amd_nick/">_AMD_</a></h4>
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2021-04-05">5 апр. 2021</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 5 min read</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
+
+            <figure class="post-full-image">
+                <img
+                    srcset="https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg 300w,
+                            https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg 600w,
+                            https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg 1000w,
+                            https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg 2000w"
+                    sizes="(max-width: 800px) 400px,
+                        (max-width: 1170px) 1170px,
+                            2000px"
+                    src="https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg"
+                    alt="GitHub вместо Steam Workshop для Garry&#x27;s Mod"
+                />
+            </figure>
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <p>InGameShop (IGS) - внутриигровая менюшка для Garry's Mod серверов, через которую игроки донатят их владельцам с помощью <a href="https://gm-donate.ru">gm-donate.ru</a>. До недавней поры установка происходила через Steam Workshop. Сейчас готова версия, которая 1 запросом скачивает и выполняет код. Внизу будет реализация</p><p>Разработка такой версии изначально казалась задачкой на вечерок под кофеек, но много раз откладывалась из-за каких-то нюансов. Было много идей, как все реализовать, но выжила только одна, о которой пост</p><h2 id="%D1%87%D1%82%D0%BE-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D0%BB%D0%BE%D1%81%D1%8C">Что получилось</h2><p>Open Source <a href="https://github.com/GM-DONATE/IGS">репозиторий</a> на GitHub, где создание нового тега приводит к автоматической сборке билда IGS, который можно скачать и установить <s>тупым</s> простым HTTP GET запросом</p><h2 id="%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0">Преимущества</h2><blockquote>Вкратце: проще для пользователей и разработчиков</blockquote><ul><li>Пользователям не нужно учиться, как создавать коллекцию в Steam Workshop, добавить в нее ваш/наш аддон, а потом еще привязать к серверу. Для установки достаточно 1 файла с http.Fetch + RunString</li><li>Разработчикам с базовым знанием Git проще релизить аддон, потому что упаковать его в .gma, затем загружать в Workshop после малейших фиксов это геморрой. Разработчики на Linux/Mac без установленного Steam и вовсе не смогут залить обновление в Workshop, зато с этим способом это простой <code>git tag NAME -am "Hello world!"</code> + <code>git push origin NAME</code> </li><li>Когда Workshop лежит или на аддон кто-то пожаловался или вдруг Steam изменил API (а мы сталкивались со всем из перечисленного), то страдают все. Аддон становится недоступным и отключается на всех серверах</li><li>Пользователи могут сделать форк репозитория, делать свои модификации IGS и использовать свои версии вместо нашего репозитория. Код открытый, любой может его изменить или убедиться в безопасности</li><li>Возможность поддержки сразу нескольких версий скрипта без необходимости выкладывать новый аддон в воркшоп, когда происходят изменения без обратной совместимости. Каждый обновляется как хочет и когда хочет</li></ul><h2 id="%D0%BD%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%B8">Недостатки</h2><blockquote>Вкратце: для работы нужен интернет и отсутствие <a href="https://vk.com/wall-143836547_113">параноидальных античитов</a></blockquote><ul><li>Без интернета аддон не загрузится. Если IGS без интернета и бесполезен и для нас это не критично, то для других скриптов это может быть важно</li><li>Код после упаковки становится однострочным и если где-то возникнет ошибка, то вызывайте экстрасенсов (возможно, в будущем будет новый json упаковщик, который решит эту проблему)</li><li>Если на серверах есть блокираторы RunString/CompileString, то это не гуд</li><li>Кастомные модельки придется загружать сторонним аддоном. В веб скрипт их засунуть не получится</li><li>Если у вас используются .dll, то придется искать им альтернативу. Для замены пушей через socket.dll мы сделали <a href="https://blog.amd-nick.me/webhook-bez-web-servera">long polling microservice</a>.</li><li>Некоторые хостинги могут блокировать запросы к GitHub</li></ul><h2 id="%D0%B2-%D1%87%D0%B5%D0%BC-%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C">В чем сложность?</h2><p>Нельзя просто так взять и залить какой-нить zip в интернет, скачать его с гмода, распаковать там и запустить, как ни в чем не бывало. Ну вообще-то кое-что подобное сделать можно, но не суть. Нельзя короче.</p><figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2021/04/image.png" class="kg-image" alt loading="lazy" width="1400" height="788"></figure><p>Исходный код содержится во множестве файлов, включая отдельные энтити, требующие особых правил загрузки и сторонние модули, которых нет в репозитории, но которые все равно должны подгружаться скачанным кодом.</p><p>Сама web загрузка тоже с приколдесом и срабатывает после ПОЛНОЙ загрузки сервера и всех загрузочных хуков, вроде InitPostEntity, PostGamemodeLoaded, GM:Initialize и т.д., а значит, что если в коде будут использоваться эти хуки, то они сами по себе уже не будут вызваны.</p><p>Кроме того нужно было сделать, чтобы скрипт умел автоматически обновляться до свежей версии и сам понимать, какую версию ему можно установить, а какую нет. Мы же не хотим, чтобы наша любимая Windows XP превратилась в Windows 10 без нашего желания, правда? Ну вот и некоторые клиенты не очень любят обновляться.</p><p>Если этого мало, то учитывайте еще то, что путь в include может быть как относительный (init.lua), так и абсолютный (igs/interface/vgui/init.lua), а код должен понимать, где искать файл.</p><p>Теперь можно выдохнуть? Нет. Пора думать про безопасность и про то, чтобы клиенты не могли изменить какой-то файл и добавить в него клиентский скрипт (например, чит). Вообще-то, мы тупо решили не кешировать файлы, но если захотите сделать такую глупость вместо нас, то сравнивайте хотя бы util.CRC файлов на клиенте и сервере.</p><hr><h1 id="%D1%80%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F">Реализация</h1><p>Было несколько идей реализации, но все они оказались говном. Эта, конечно, тоже пахнет, но не так, как другие. Честно</p><blockquote>Вкратце: аддон упаковывается в много строк в 1 superfile.txt в формате <code>путь код</code>, гмод скачивает его, а специальный include(путь) выполняет RunString, если путь есть в файле</blockquote><h3 id="%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D1%89%D0%B8%D0%BA">Упаковщик</h3><p>Нужно написать программку (<a href="https://github.com/GM-DONATE/IGS/blob/f69d14219b68d616f5ffeca3943aab22e10528e2/luapack/main.lua">вот</a>), которая упакует ваш аддон в 1 файл. В нашем случае это superfile.txt. На момент написания поста это происходит так: скрипт рекурсивно "бегает" по папке <code>addons/igs-core</code>, читает каждый файл, превращает его в одну строку, а затем добавляет в superfile.txt путь к этому файлу и его содержимое.</p><figure class="kg-card kg-image-card kg-width-wide kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2021/04/image-1.png" class="kg-image" alt loading="lazy" width="1402" height="466"><figcaption>Частичка superfile.txt. Много строк типа <code>igs/init.lua print("я очечко")</code></figcaption></figure><h3 id="%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%82%D0%BE%D1%80-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D1%89%D0%B8%D0%BA">Автоматизатор + Доставщик</h3><p>GitHub будет сам <a href="https://github.com/GM-DONATE/IGS/blob/f42c833b443557fbca6e3506603d2093d6a6c5f8/.github/workflows/release_superfile.yml#L22-L25">делать superfile.txt</a> и создавать с ним <a href="https://github.com/GM-DONATE/IGS/releases">релиз</a> каждый раз, когда будет создаваться новый <code>git tag</code>.</p><blockquote>Вообще, GitHub это еще и хостинг для нашего аддона и история изменений и API для поиска и скачивания нужной версии кода и хипстерские иконки в readme и вычислительные мощности для каких угодно автоматизаций и совместная разработка и вообще GitHub это чудо света. Даже сын маминой подруги не так крут. Всем советую</blockquote><p>Для удобства GitHub еще создаст igs-mod.zip (архив <a href="https://github.com/GM-DONATE/IGS/tree/main/addons/igs-modification/lua">этой папки</a>), который владельцы серверов должны установить себе на сервер и тоже добавит его к релизу. Это позволяет легко скачать настройщик, не скачивая весь репозиторий</p><h3 id="%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B0%D0%BB%D0%BA%D0%B0">Получалка</h3><p>Это <a href="https://github.com/GM-DONATE/IGS/blob/f42c833b443557fbca6e3506603d2093d6a6c5f8/addons/igs-modification/lua/autorun/l_ingameshopmod.lua#L3-L13">простой http.Fetch</a>, который скачивает и запускает главный файл. Он встроен в igsmodification (Настройщик), который пользователям так или иначе все равно придется установить на сервер, поэтому Получалку я встроил именно туда</p><p>В самом упрощенном виде выглядит вот так:</p><pre><code class="language-lua">http.Fetch("https://raw.githubusercontent.com/GM-DONATE/IGS/main/addons/igs-core/lua/autorun/l_ingameshop.lua", RunString, error)</code></pre><h3 id="%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D1%87%D0%B8%D0%BA">Загрузчик</h3><p>Встречайте вишенку на торте. Именно ссылка на <a href="https://github.com/GM-DONATE/IGS/blob/main/addons/igs-core/lua/autorun/l_ingameshop.lua">Загрузчик</a> указана в Получалке и именно Загрузчик ищет, скачивает superfile.txt и занимается тем, чтобы все исправно загружалось (энтити, модули, хуки).</p><p>Загрузчик находит и скачивает superfile.txt, парсит его и засовывает в таблицу <code>IGS.CODEMOUNT</code>.</p><blockquote>Именно Загрузчик говорит клиентам, какой файл нужно скачивать, поэтому не будет такого, что клиенты скачают одну версию, а сервер другую</blockquote><p>В Загрузчике есть 3 основных функции: <code>IGS.sh</code>, <code>IGS.sv</code> и <code>IGS.cl</code>. По сути это обертки для <code>include()</code>. Эти функции вызываются примерно так: <code>IGS.sv("igs/core_sv.lua")</code> а функция потом ищет указанный путь в <code>IGS.CODEMOUNT</code> (кеш superfile.txt) и если такой путь есть, то запускает код с него, а если нет, то ищет файл в аддонах и грузит оттуда обычным include. Это позволяет запускать модули, которые уже есть на сервере</p><hr><h1 id="%D0%B1%D0%BE%D0%BD%D1%83%D1%81">Бонус</h1><blockquote>Можно не читать, если не собираетесь делать свою реализацию веб загрузки</blockquote><ul><li><a href="https://github.com/wiremod/advdupe2/blob/09f9f7d38290e7359340430c7d0ab2579bf6364f/.travis.yml">git action</a> для создания gma. Сначала планировалось просто делать .gma из аддона, затем скачивать именно .gma с GitHub, потом распаковывать на сервере вместо superfile.txt, но этот способ показался мне избыточным</li><li><a href="https://gist.github.com/IVogel/24bbdb87eed132893cafbc0ef25c8c17">gma unpacker</a>. Именно этот скрипт должен был распаковывать скачанный .gma. Автор <a href="https://t.me/IVogel">IVogel</a>.</li><li>Если все же хотите использовать кастом модельки в скриптах, то добавляйте их в свой аддон-Получалку, заливайте в воркшоп и комбинируйте с <code>resource.AddWorkshop</code></li><li>Нет смысла скачивать superfile.txt, кешировать его и потом грузиться с него вместо скачивания при каждой загрузке сервера или клиента. Это уменьшает защиту от читеров и усложняет вам поддержание такого решения. Кода получится намного больше, а выгоды от этого нет</li><li>Был вариант с двумя <code>SH+CL</code> и <code>SH+SV</code> файлами, чтобы "сэкономить трафик", но это <em>экономия на копейках, потеря в рублях</em>. Тяжело будет отделять и поддерживать сразу 2 файла, а выгода будет в паре килобайт, что в современном мире – ничто</li><li>Одна из идей реализации - упаковка кода в файл построчно таким образом, чтобы код выполнялся один за другим и нормально работал. Но тут и проблема "как упаковать" и проблема "что делать с энтити и сторонними модулями"</li><li>Еще одна из идей реализации это через реплейс инклюдов в коде сразу содержимым из файлов, но не все файлы всегда находились бы на сервере. Отсутствовала бы возможность работы с модулями и само решение неоправданно более сложное</li><li>Идею можно совершенствовать, сделать полноценный фреймворк для упаковки и доставки аддонов через GitHub. Можно сделать, чтобы superfile.txt был в json формате и тогда не будет проблем с определением ошибки в коде. Можно прикрутить поддержку загрузки тулов и даже при сильном желании кастом моделек</li></ul><p></p><h4 id="%D0%B5%D1%81%D0%BB%D0%B8-%D0%BF%D0%BE%D1%81%D1%82-%D0%BF%D0%BE%D0%BD%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%81%D1%8F-%D0%BC%D0%BE%D0%B6%D0%B5%D1%82-%D0%B2%D0%B0%D0%BC-%D0%BF%D0%BE%D0%BD%D1%80%D0%B0%D0%B2%D1%8F%D1%82%D1%81%D1%8F-%D0%B8-%D1%8D%D1%82%D0%B8">Если пост понравился, может вам понравятся и эти?</h4><ul><li><a href="https://blog.amd-nick.me/gmod-development">Эффективная разработка в Garry's Mod</a></li><li><a href="https://blog.amd-nick.me/kak-mi-delali-avtodonat-dlya-garrys-mod/">Как мы gm-donate.ru открывали</a></li><li><a href="https://blog.amd-nick.me/steam-telegram-authenticator/">Бот для генерации кодов авторизации Steam</a></li></ul>
+                </div>
+            </section>
+
+                <section class="subscribe-form">
+    <h3 class="subscribe-form-title">Subscribe to Блог _AMD_</h3>
+    <p class="subscribe-form-description">Get the latest posts delivered right to your inbox</p>
+    <form data-members-form="subscribe">
+        <div class="form-group">
+            <input class="subscribe-email" data-members-email placeholder="youremail@example.com" autocomplete="false" />
+            <button class="button primary" type="submit">
+                <span class="button-content">Subscribe</span>
+                <span class="button-loader"><svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+    <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+    <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+            dur="0.5s" repeatCount="indefinite" />
+    </path>
+</svg></span>
+            </button>
+        </div>
+        <div class="message-success">
+            <strong>Great!</strong> Check your inbox and click the link to confirm your subscription.
+        </div>
+        <div class="message-error">
+            Please enter a valid email address!
+        </div>
+    </form>
+</section>
+            <section class="post-full-comments">
+                <div id="disqus_thread"></div>
+                <script>
+                var disqus_config = function () {
+                    this.page.url = "https://blog.amd-nick.me/github-workshop-garrysmod/";
+                    this.page.identifier = "ghost-605fd4c5994b35000165e3b0"
+                };
+                (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://blog-amd-nick-me.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+                <article class="read-next-card">
+                    <header class="read-next-card-header">
+                        <h3><span>More in</span> <a href="/tag/gm-donate/">Gm-Donate.Ru</a></h3>
+                    </header>
+                    <div class="read-next-card-content">
+                        <ul>
+                            <li>
+                                <h4><a href="/kak-mi-delali-avtodonat-dlya-garrys-mod/">Как мы gm-donate.ru открывали</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2018-01-23">23 янв. 2018</time> –
+                                        5 min read</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4><a href="/chelovecheskaya-glupost/">О человеческой глупости</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2017-07-12">12 июля 2017</time> –
+                                        3 min read</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="read-next-card-footer">
+                        <a href="/tag/gm-donate/">See all 2 posts
+                            →</a>
+                    </footer>
+                </article>
+
+                <article class="post-card post tag-programming ">
+
+    <a class="post-card-image-link" href="/ssh-keys/">
+        <img class="post-card-image"
+            srcset="https://s3.blog.amd-nick.me/2021/10/ssh-keys-meme.jpg 300w,
+                    https://s3.blog.amd-nick.me/2021/10/ssh-keys-meme.jpg 600w,
+                    https://s3.blog.amd-nick.me/2021/10/ssh-keys-meme.jpg 1000w,
+                    https://s3.blog.amd-nick.me/2021/10/ssh-keys-meme.jpg 2000w"
+            sizes="(max-width: 1000px) 400px, 700px"
+            src="https://s3.blog.amd-nick.me/2021/10/ssh-keys-meme.jpg"
+            alt="SSH ключи, зачем нужны и где тут удобство"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/ssh-keys/">
+
+            <header class="post-card-header">
+                    <div class="post-card-primary-tag">Разработка</div>
+                <h2 class="post-card-title">SSH ключи, зачем нужны и где тут удобство</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Никак не мог понять зачем их использовать. В чем удобство каждый раз редактировать какие-то конфиги и закидать что-то куда-то. А я просто неправильно жил и выдумал себе несуществующие проблемы.Зачем</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        _AMD_
+                    </div>
+            
+                    <a href="/author/amd_nick/" class="static-avatar">
+                        <img class="author-profile-image" src="/content/images/size/w100/2018/07/vk_-102092477_456240416-1.jpg" alt="_AMD_" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="/author/amd_nick/">_AMD_</a></span>
+                <span class="post-card-byline-date"><time datetime="2021-10-05">5 окт. 2021</time> <span class="bull">&bull;</span> 2 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+                <article class="post-card post tag-programming ">
+
+    <a class="post-card-image-link" href="/webhook-bez-web-servera/">
+        <img class="post-card-image"
+            srcset="https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg 300w,
+                    https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg 600w,
+                    https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg 1000w,
+                    https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg 2000w"
+            sizes="(max-width: 1000px) 400px, 700px"
+            src="https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg"
+            alt="Webhook без веб сервера"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/webhook-bez-web-servera/">
+
+            <header class="post-card-header">
+                    <div class="post-card-primary-tag">Разработка</div>
+                <h2 class="post-card-title">Webhook без веб сервера</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Если развернуть веб сервер с вебхуком возможности нет, а принимать сообщения от какого-то сервиса (например Telegram) нужно, мы используем polling. Это когда мы сами спрашиваем у сервиса, нет ли у</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        _AMD_
+                    </div>
+            
+                    <a href="/author/amd_nick/" class="static-avatar">
+                        <img class="author-profile-image" src="/content/images/size/w100/2018/07/vk_-102092477_456240416-1.jpg" alt="_AMD_" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="/author/amd_nick/">_AMD_</a></span>
+                <span class="post-card-byline-date"><time datetime="2021-03-08">8 мар. 2021</time> <span class="bull">&bull;</span> 2 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+        </div>
+    </div>
+</aside>
+
+
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://blog.amd-nick.me">Блог _AMD_</a> &copy; 2022</section>
+                <nav class="site-footer-nav">
+                    <a href="https://blog.amd-nick.me">Latest Posts</a>
+                    <a href="https://www.facebook.com/amdshnick" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://twitter.com/amd_nick" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="subscribe-success-message">
+        <a class="subscribe-close" href="javascript:;"></a>
+        You've successfully subscribed to Блог _AMD_!
+    </div>
+
+    <div id="subscribe" class="subscribe-overlay">
+        <a class="subscribe-close" href="#"></a>
+        <div class="subscribe-overlay-content">
+                <img class="subscribe-overlay-logo" src="https://blog.amd-nick.me/content/images/2018/07/logo.png" alt="Блог _AMD_" />
+            <div class="subscribe-form">
+                <h1 class="subscribe-overlay-title">Subscribe to Блог _AMD_</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest & greatest posts delivered straight to your inbox</p>
+                <form data-members-form="subscribe">
+                    <div class="form-group">
+                        <input class="subscribe-email" data-members-email placeholder="youremail@example.com"
+                            autocomplete="false" />
+                        <button class="button primary" type="submit">
+                            <span class="button-content">Subscribe</span>
+                            <span class="button-loader"><svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+    <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+    <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+            dur="0.5s" repeatCount="indefinite" />
+    </path>
+</svg></span>
+                        </button>
+                    </div>
+                    <div class="message-success">
+                        <strong>Great!</strong> Check your inbox and click the link to confirm your subscription.
+                    </div>
+                    <div class="message-error">
+                        Please enter a valid email address!
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="/assets/built/casper.js?v=c4ebd0fc56"></script>
+
+    <script>
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Give the parameter a variable name
+        var action = getParameterByName('action');
+
+        $(document).ready(function () {
+            if (action == 'subscribe') {
+                $('body').addClass("subscribe-success");
+            }
+
+            $('.subscribe-success-message .subscribe-close').click(function () {
+                $('.subscribe-success-message').addClass('close');
+            });
+
+            // Reset form on opening subscrion overlay
+            $('.subscribe-button').click(function() {
+                $('.subscribe-overlay form').removeClass();
+                $('.subscribe-email').val('');
+            });
+        });
+    </script>
+
+    <script>
+    $(document).ready(function () {
+        // FitVids - start
+        var $postContent = $(".post-full-content");
+        $postContent.fitVids();
+        // FitVids - end
+
+        // Replace nav with title on scroll - start
+        Casper.stickyNavTitle({
+            navSelector: '.site-nav-main',
+            titleSelector: '.post-full-title',
+            activeClass: 'nav-post-title-active'
+        });
+        // Replace nav with title on scroll - end
+
+        // Hover on avatar
+        var hoverTimeout;
+        $('.author-list-item').hover(function () {
+            var $this = $(this);
+
+            clearTimeout(hoverTimeout);
+
+            $('.author-card').removeClass('hovered');
+            $(this).children('.author-card').addClass('hovered');
+
+        }, function () {
+            var $this = $(this);
+
+            hoverTimeout = setTimeout(function () {
+                $this.children('.author-card').removeClass('hovered');
+            }, 800);
+        });
+    });
+</script>
+
+
+    <script src="https://t.ghostboard.io/min.js" async defer data-gbid="6067bda30316927dc80d617b"></script><noscript><img src="https://ghostboard.io/api/noscript/6067bda30316927dc80d617b/pixel.gif" alt="Ghostboard pixel" /></noscript>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-60044609-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-60044609-2');
+</script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(49559035, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49559035" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>
