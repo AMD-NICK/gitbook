@@ -21,6 +21,7 @@
 
 * [Мой MacBook – приложения и конфиг](mac/macbook-apps-and-settings.md)
 
-## 👨💻 Разработка <a href="#dev" id="dev"></a>
+## 👨💻 👨💻 Разработка <a href="#dev" id="dev"></a>
 
+* [poll.gmod.app документация](dev/poll-gmod-app-docs.md)
 * [ip to int и int to ip на пальцах](dev/ip-to-int.md)
